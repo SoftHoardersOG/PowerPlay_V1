@@ -17,6 +17,10 @@ public class MainTeleOp extends LinearOpMode{
 
         while(opModeIsActive()&&!isStopRequested()){
             Movement.driving(gamepad1);
+            telemetry.addData("Xpos:", drive.getPoseEstimate().getX());
+            telemetry.addData("Ypos:", drive.getPoseEstimate().getY());
+            telemetry.addData("Hpos:", Math.toDegrees(drive.getPoseEstimate().getHeading()));
+            telemetry.update();
         }
     }
 }

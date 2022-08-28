@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-=import org.firstinspires.ftc.teamcode.RoadRunner.drive.SampleMecanumDriveCancelable;
+import org.firstinspires.ftc.teamcode.RoadRunner.drive.SampleMecanumDriveCancelable;
 
 /**
  * Example opmode demonstrating how to break out from a live trajectory at any arbitrary point in
