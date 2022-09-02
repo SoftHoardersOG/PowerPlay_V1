@@ -14,12 +14,10 @@ public class MainTeleOp extends LinearOpMode{
         SampleMecanumDrive drive = new SampleMecanumDrive(hardwareMap);
         Initializations.TeleOpInitialization(drive, telemetry, hardwareMap);
         waitForStart();
-
+        Intake.lowerIntake();
         while(opModeIsActive()&&!isStopRequested()){
             Movement.driving(gamepad1);
-            telemetry.addData("Xpos:", drive.getPoseEstimate().getX());
-            telemetry.addData("Ypos:", drive.getPoseEstimate().getY());
-            telemetry.addData("Hpos:", Math.toDegrees(drive.getPoseEstimate().getHeading()));
+            Intake.run(gamepad1);
             telemetry.update();
         }
     }
