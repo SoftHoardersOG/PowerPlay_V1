@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode.Hardware;
 import com.qualcomm.robotcore.hardware.AnalogInput;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.DistanceSensor;
 import com.qualcomm.robotcore.hardware.Servo;
@@ -10,6 +11,10 @@ import com.qualcomm.robotcore.hardware.Servo;
 public class HardwareUtils {
     public static DcMotor getDc(String name) {
         return Hardware.hardwareMap.get(DcMotor.class, name);
+    }
+
+    public static DcMotorEx getDcEx(String name) {
+        return Hardware.hardwareMap.get(DcMotorEx.class, name);
     }
 
     public static AnalogInput getAnalogInput(String name) {

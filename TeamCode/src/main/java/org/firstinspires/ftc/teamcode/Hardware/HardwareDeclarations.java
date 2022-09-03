@@ -2,6 +2,7 @@ package org.firstinspires.ftc.teamcode.Hardware;
 
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.hardware.Servo;
 
@@ -12,7 +13,8 @@ public class HardwareDeclarations {
     public static Telemetry telemetry;
     public static HardwareMap hardwareMap;
     public static DcMotor intake;
-    public static DcMotor shooter;
+    public static DcMotorEx shooterLeft;
+    public static DcMotorEx shooterRight;
     public static Servo actionIntakeLeft;
     public static Servo actionIntakeRight;
     public static CRServo indexerLeft;
